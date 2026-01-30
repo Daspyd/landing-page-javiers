@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de presentación profesional">
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Cursor personalizado -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Javiers</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Acerca de</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <span class="nav-indicator"></span>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Construimos tus ideas</h1>
+            <p class="hero-subtitle" id="typewriter">Soluciones innovadoras para tu negocio</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Empezar Ahora</a>
+                <a href="#about" class="btn btn-secondary">Conocer Más</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="80" fill="#6b4423"/>
+                    <circle cx="100" cy="100" r="60" fill="#966F33"/>
+                    <circle cx="100" cy="100" r="40" fill="#eed09d"/>
+                </svg>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nuestra Historia</h3>
+                    <p>Somos un equipo de creadores sin miedo a los retos Un trabajo que es también nuestra pasión. Por eso, nos esforzamos en hacer posible todo lo que puedas imaginar. Somos diferentes y vamos a demostrarte por qué.</p>
+                    <p>Nuestra misión es proveer a nuestros clientes una forma innovadora de exponer sus ideas manteniendo la esencia que lo caracteriza. Para que así podamos convertirnos en la empresa líder de nuestro campo laboral, siendo reconocidos por la gran calidad y servicio que ofrecemos en cada uno de nuestros trabajos.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Tasa de Éxito</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Diseñamos</h3>
+                    <p>Al momento de diseñar, empezamos por conocer a nuestro cliente y sus metas en la expo, de ahí para que sean una fiel imagen de su empresa.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Fabricamos</h3>
+                    <p>Nuestra filosofía de «Construimos tus ideas» harán que tu stand sea uno de los mejores tanto en calidad como en presencia.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Instalamos</h3>
+                    <p>Con JAVI tendrás el apoyo de personal capacitado que busca entregar un trabajo de calidad y sin contratiempos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería/Carrusel -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nuestro Trabajo</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="800" height="600" fill="#6b4423"/>
+                                    <circle cx="400" cy="300" r="150" fill="#966F33" opacity="0.7"/>
+                                    <circle cx="300" cy="250" r="100" fill="#eed09d" opacity="0.5"/>
+                                    <text x="400" y="320" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Proyecto 1</text>
+                                </svg>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Stand Corporativo</h3>
+                                <p>Diseño innovador para expo internacional</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="800" height="600" fill="#966F33"/>
+                                    <rect x="150" y="150" width="500" height="300" fill="#eed09d" opacity="0.6"/>
+                                    <circle cx="400" cy="300" r="80" fill="#6b4423"/>
+                                    <text x="400" y="320" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Proyecto 2</text>
+                                </svg>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Espacio Comercial</h3>
+                                <p>Ambiente moderno y acogedor</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="800" height="600" fill="#eed09d"/>
+                                    <polygon points="400,100 700,500 100,500" fill="#6b4423" opacity="0.7"/>
+                                    <circle cx="400" cy="400" r="120" fill="#966F33" opacity="0.5"/>
+                                    <text x="400" y="320" font-size="48" fill="#6b4423" text-anchor="middle" font-weight="bold">Proyecto 3</text>
+                                </svg>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Instalación Premium</h3>
+                                <p>Calidad y precisión en cada detalle</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="800" height="600" fill="#4a3520"/>
+                                    <rect x="100" y="100" width="200" height="400" fill="#966F33" opacity="0.8"/>
+                                    <rect x="350" y="150" width="200" height="350" fill="#eed09d" opacity="0.6"/>
+                                    <rect x="600" y="200" width="150" height="300" fill="#6b4423" opacity="0.7"/>
+                                    <text x="400" y="320" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Proyecto 4</text>
+                                </svg>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Diseño Arquitectónico</h3>
+                                <p>Estructuras únicas y funcionales</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-image">
+                                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="800" height="600" fill="#966F33"/>
+                                    <circle cx="250" cy="200" r="100" fill="#eed09d" opacity="0.6"/>
+                                    <circle cx="550" cy="400" r="120" fill="#6b4423" opacity="0.7"/>
+                                    <circle cx="400" cy="300" r="80" fill="#4a3520" opacity="0.8"/>
+                                    <text x="400" y="320" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Proyecto 5</text>
+                                </svg>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Experiencia Completa</h3>
+                                <p>Soluciones integrales para tu marca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles de navegación -->
+                <button class="carousel-control prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-control next" aria-label="Siguiente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                    <button class="indicator" data-slide="4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacta con Nosotros</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Estamos aquí para ayudarte. Contáctanos y cuéntanos sobre tu proyecto.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@tumarca.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Ciudad, País</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TuMarca</h4>
+                    <p>Creando soluciones digitales excepcionales desde 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="LinkedIn">IN</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TuMarca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
