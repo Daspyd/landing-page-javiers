@@ -213,17 +213,40 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Formulario de contacto
+// Formulario de contacto — envío a Formspree
 const contactForm = document.querySelector('.contact-form');
+const formStatus = document.getElementById('form-status');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Aquí puedes agregar tu lógica para enviar el formulario
-    // Por ejemplo, usando fetch para enviar a un servidor
-    
-    alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-    contactForm.reset();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    const data = new FormData(contactForm);
+
+    try {
+        const response = await fetch('https://formspree.io/f/REEMPLAZA_CON_TU_ID', {
+            method: 'POST',
+            body: data,
+            headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+            formStatus.textContent = '¡Gracias! Tu mensaje fue enviado.';
+            formStatus.style.color = '#4CAF50';
+            contactForm.reset();
+        } else {
+            formStatus.textContent = 'Hubo un error. Intenta de nuevo.';
+            formStatus.style.color = '#f44336';
+        }
+    } catch {
+        formStatus.textContent = 'Error de conexión. Intenta de nuevo.';
+        formStatus.style.color = '#f44336';
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Enviar Mensaje';
 });
 
 // Animación de aparición al hacer scroll
